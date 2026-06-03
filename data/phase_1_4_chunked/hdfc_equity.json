@@ -1,0 +1,82 @@
+[
+    {
+        "chunk_id": "hdfc_equity_expense_ratio",
+        "scheme_id": "hdfc_equity",
+        "scheme_name": "HDFC Equity Fund \u2014 Direct Growth",
+        "section_key": "expense_ratio",
+        "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+        "text": "Scheme: HDFC Equity Fund \u2014 Direct Growth\nSection: expense_ratio\nContent: 0.68",
+        "token_count": 11,
+        "content_hash": "888995951cb59c82328fd647b00496bb92986e5c06f16b50afa88a9a7a16603c"
+    },
+    {
+        "chunk_id": "hdfc_equity_exit_load",
+        "scheme_id": "hdfc_equity",
+        "scheme_name": "HDFC Equity Fund \u2014 Direct Growth",
+        "section_key": "exit_load",
+        "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+        "text": "Scheme: HDFC Equity Fund \u2014 Direct Growth\nSection: exit_load\nContent: Exit load of 1% if redeemed within 1 year\\r\\n",
+        "token_count": 19,
+        "content_hash": "8da3c937c399c4c3a74d7c9d92e8be181fd8f59358df07aba98ccfdceca8f947"
+    },
+    {
+        "chunk_id": "hdfc_equity_min_sip_amount",
+        "scheme_id": "hdfc_equity",
+        "scheme_name": "HDFC Equity Fund \u2014 Direct Growth",
+        "section_key": "min_sip_amount",
+        "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+        "text": "Scheme: HDFC Equity Fund \u2014 Direct Growth\nSection: min_sip_amount\nContent: 100",
+        "token_count": 11,
+        "content_hash": "0eaf2927b07d7b6e8b9d03576b0c599ecdd4b49d4d5426074e857eea5c7a2a9b"
+    },
+    {
+        "chunk_id": "hdfc_equity_riskometer",
+        "scheme_id": "hdfc_equity",
+        "scheme_name": "HDFC Equity Fund \u2014 Direct Growth",
+        "section_key": "riskometer",
+        "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+        "text": "Scheme: HDFC Equity Fund \u2014 Direct Growth\nSection: riskometer\nContent: Very High",
+        "token_count": 12,
+        "content_hash": "ac9bffb09a6b07d6179f95eda0d99dd5e67b06820ce8efd750c3783c6a939991"
+    },
+    {
+        "chunk_id": "hdfc_equity_benchmark_index",
+        "scheme_id": "hdfc_equity",
+        "scheme_name": "HDFC Equity Fund \u2014 Direct Growth",
+        "section_key": "benchmark_index",
+        "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+        "text": "Scheme: HDFC Equity Fund \u2014 Direct Growth\nSection: benchmark_index\nContent: NIFTY 500 TRI",
+        "token_count": 13,
+        "content_hash": "2d755c660f3feea1e66d7490498a4f16f7becb4d6c6a0e6e5f6279a4ba6bb88e"
+    },
+    {
+        "chunk_id": "hdfc_equity_fund_overview",
+        "scheme_id": "hdfc_equity",
+        "scheme_name": "HDFC Equity Fund \u2014 Direct Growth",
+        "section_key": "fund_overview",
+        "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+        "text": "Scheme: HDFC Equity Fund \u2014 Direct Growth\nSection: fund_overview\nContent: HDFC FLEXICAP FUND - DIRECT PLAN - GROWTH OPTION",
+        "token_count": 19,
+        "content_hash": "b0450a89a1b206556be78690d7b3f34535f74d369844b15c273a494c1857ae6f"
+    },
+    {
+        "chunk_id": "hdfc_equity_aum",
+        "scheme_id": "hdfc_equity",
+        "scheme_name": "HDFC Equity Fund \u2014 Direct Growth",
+        "section_key": "aum",
+        "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+        "text": "Scheme: HDFC Equity Fund \u2014 Direct Growth\nSection: aum\nContent: 100479.2308",
+        "token_count": 11,
+        "content_hash": "85d13e4237aa121585278f847443386f36b9582d5debc425c52fa8eefa527ba0"
+    },
+    {
+        "chunk_id": "hdfc_equity_nav",
+        "scheme_id": "hdfc_equity",
+        "scheme_name": "HDFC Equity Fund \u2014 Direct Growth",
+        "section_key": "nav",
+        "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+        "text": "Scheme: HDFC Equity Fund \u2014 Direct Growth\nSection: nav\nContent: 2115.535",
+        "token_count": 11,
+        "content_hash": "cfec8946611c670e0c358212d7385d4c440afe1e89aa5495c248f70e2e905bfa"
+    }
+]

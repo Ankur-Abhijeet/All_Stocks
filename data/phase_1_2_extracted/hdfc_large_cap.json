@@ -1,0 +1,16 @@
+{
+    "scheme_id": "hdfc_large_cap",
+    "scheme_name": "HDFC Large Cap Fund \u2014 Direct Growth",
+    "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+    "sections": {
+        "expense_ratio": "0.99",
+        "exit_load": "Exit load of 1% if redeemed within 1 year",
+        "min_sip_amount": "100",
+        "riskometer": "Very High",
+        "benchmark_index": "NIFTY 100 TRI",
+        "fund_overview": "HDFC LARGE CAP FUND - DIRECT PLAN - GROWTH OPTION",
+        "aum": "38121.2733",
+        "nav": "1163.96"
+    },
+    "extracted_at": "2026-06-04"
+}

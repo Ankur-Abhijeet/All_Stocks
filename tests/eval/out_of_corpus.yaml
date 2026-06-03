@@ -1,0 +1,8 @@
+# tests/eval/out_of_corpus.yaml
+# Phase 5 — Out-of-corpus queries; all must return dont_know route.
+# TODO: Populate in Phase 5
+- id: placeholder
+  question: "What is the expense ratio of Axis Mid Cap Fund?"
+  expected_route: dont_know
+  expected_contains_url: false
+  last_verified: "2026-06-03"

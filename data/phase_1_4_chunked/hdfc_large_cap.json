@@ -1,0 +1,82 @@
+[
+    {
+        "chunk_id": "hdfc_large_cap_expense_ratio",
+        "scheme_id": "hdfc_large_cap",
+        "scheme_name": "HDFC Large Cap Fund \u2014 Direct Growth",
+        "section_key": "expense_ratio",
+        "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+        "text": "Scheme: HDFC Large Cap Fund \u2014 Direct Growth\nSection: expense_ratio\nContent: 0.99",
+        "token_count": 12,
+        "content_hash": "ff62884f07e2aff600a0ffd0fe7323d9e08ccca3887069bc3ecc8ed9996b15e7"
+    },
+    {
+        "chunk_id": "hdfc_large_cap_exit_load",
+        "scheme_id": "hdfc_large_cap",
+        "scheme_name": "HDFC Large Cap Fund \u2014 Direct Growth",
+        "section_key": "exit_load",
+        "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+        "text": "Scheme: HDFC Large Cap Fund \u2014 Direct Growth\nSection: exit_load\nContent: Exit load of 1% if redeemed within 1 year",
+        "token_count": 20,
+        "content_hash": "3e48d7c3e397299a49227c1b324d4f198423655e2c03e480d5b819906c5ef828"
+    },
+    {
+        "chunk_id": "hdfc_large_cap_min_sip_amount",
+        "scheme_id": "hdfc_large_cap",
+        "scheme_name": "HDFC Large Cap Fund \u2014 Direct Growth",
+        "section_key": "min_sip_amount",
+        "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+        "text": "Scheme: HDFC Large Cap Fund \u2014 Direct Growth\nSection: min_sip_amount\nContent: 100",
+        "token_count": 12,
+        "content_hash": "38c46e8995d54021287fb5a2e481061339897486285b045575ae08402e152dd6"
+    },
+    {
+        "chunk_id": "hdfc_large_cap_riskometer",
+        "scheme_id": "hdfc_large_cap",
+        "scheme_name": "HDFC Large Cap Fund \u2014 Direct Growth",
+        "section_key": "riskometer",
+        "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+        "text": "Scheme: HDFC Large Cap Fund \u2014 Direct Growth\nSection: riskometer\nContent: Very High",
+        "token_count": 13,
+        "content_hash": "61eb38dce775a31a7f1310b536bfd82c87d933cd9385f6be039842094c81e6a3"
+    },
+    {
+        "chunk_id": "hdfc_large_cap_benchmark_index",
+        "scheme_id": "hdfc_large_cap",
+        "scheme_name": "HDFC Large Cap Fund \u2014 Direct Growth",
+        "section_key": "benchmark_index",
+        "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+        "text": "Scheme: HDFC Large Cap Fund \u2014 Direct Growth\nSection: benchmark_index\nContent: NIFTY 100 TRI",
+        "token_count": 14,
+        "content_hash": "5d3672eab6bf6fa16576b467270d7dcaa0d55981effda880aa45d43b7a016539"
+    },
+    {
+        "chunk_id": "hdfc_large_cap_fund_overview",
+        "scheme_id": "hdfc_large_cap",
+        "scheme_name": "HDFC Large Cap Fund \u2014 Direct Growth",
+        "section_key": "fund_overview",
+        "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+        "text": "Scheme: HDFC Large Cap Fund \u2014 Direct Growth\nSection: fund_overview\nContent: HDFC LARGE CAP FUND - DIRECT PLAN - GROWTH OPTION",
+        "token_count": 21,
+        "content_hash": "369258c3a21dc06f23a0289a9cdd754afaaba04daed4c75cc7c4c01fa17d15b1"
+    },
+    {
+        "chunk_id": "hdfc_large_cap_aum",
+        "scheme_id": "hdfc_large_cap",
+        "scheme_name": "HDFC Large Cap Fund \u2014 Direct Growth",
+        "section_key": "aum",
+        "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+        "text": "Scheme: HDFC Large Cap Fund \u2014 Direct Growth\nSection: aum\nContent: 38121.2733",
+        "token_count": 12,
+        "content_hash": "bad1c580477665d29cd7e8549ff7168602bc710349941488d7ab416830df6b33"
+    },
+    {
+        "chunk_id": "hdfc_large_cap_nav",
+        "scheme_id": "hdfc_large_cap",
+        "scheme_name": "HDFC Large Cap Fund \u2014 Direct Growth",
+        "section_key": "nav",
+        "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+        "text": "Scheme: HDFC Large Cap Fund \u2014 Direct Growth\nSection: nav\nContent: 1163.96",
+        "token_count": 12,
+        "content_hash": "7349202dab510efddd369c0f516c83ec9891d72ad86eb02c87042138c6af33de"
+    }
+]

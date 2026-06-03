@@ -1,0 +1,19 @@
+Facts-only. No investment advice.
+
+This assistant provides factual information about mutual fund schemes sourced
+exclusively from official Groww scheme pages for five HDFC Mutual Fund schemes:
+
+  • HDFC Mid Cap Fund — Direct Growth
+  • HDFC Equity Fund — Direct Growth
+  • HDFC Focused Fund — Direct Growth
+  • HDFC ELSS Tax Saver — Direct Plan Growth
+  • HDFC Large Cap Fund — Direct Growth
+
+It does not provide:
+  • Investment advice or financial recommendations
+  • Fund performance comparisons or rankings
+  • Return projections or NAV forecasts
+  • Portfolio suitability assessments
+  • Any information from sources outside the five whitelisted Groww scheme pages
+
+Always consult a SEBI-registered investment advisor before making investment decisions.

@@ -1,0 +1,17 @@
+{
+    "scheme_id": "hdfc_elss",
+    "scheme_name": "HDFC ELSS Tax Saver \u2014 Direct Plan Growth",
+    "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+    "sections": {
+        "expense_ratio": "1.11",
+        "exit_load": "Nil",
+        "min_sip_amount": "500",
+        "lock_in_period": "Equity ELSS Very High Risk",
+        "riskometer": "Very High",
+        "benchmark_index": "NIFTY 500 TRI",
+        "fund_overview": "HDFC ELSS TAX SAVER - DIRECT PLAN - GROWTH OPTION",
+        "aum": "15559.4894",
+        "nav": "1421.343"
+    },
+    "extracted_at": "2026-06-04"
+}

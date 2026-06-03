@@ -1,0 +1,66 @@
+name: Corpus Refresh (Ingestion Pipeline)
+
+# Runs the full offline ingestion pipeline (Phase 1.1 → 1.7):
+#   Fetcher → Extractor → Cleaner → Chunker → Embedder → Indexer
+#
+# Triggers:
+#   - Weekly on Monday at 02:00 UTC
+#   - Manual trigger via GitHub UI
+#
+# On drift >= 30%: aborts swap, opens a GitHub Issue, keeps stale index.
+
+on:
+  schedule:
+    - cron: "0 2 * * 1"   # Weekly: Monday 02:00 UTC
+  workflow_dispatch:        # Manual trigger available
+
+concurrency:
+  group: corpus-refresh
+  cancel-in-progress: false  # Never cancel a running refresh mid-swap
+
+jobs:
+  refresh:
+    name: Run Ingestion Pipeline
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Validate Phase 0 config
+        run: python -m mf_faq.config.loader
+
+      - name: Run ingestion pipeline
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}   # Optional; falls back to bge-small-en
+        run: |
+          export PYTHONPATH=src
+          python -m mf_faq.ingestion.phase_1_7_refresh.refresh
+          
+      - name: Commit and push updated index
+        if: success()
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          # Only commit if there are changes
+          git diff --quiet && git diff --staged --quiet || git commit -m "chore: weekly index refresh [skip ci]"
+          git push
+
+      - name: Upload index artifact
+        uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: corpus-index-${{ github.run_id }}
+          path: data/index/live/
+          retention-days: 7

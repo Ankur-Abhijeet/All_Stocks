@@ -1,0 +1,133 @@
+# =============================================================================
+# config/refusal_intents.yaml
+# Mutual Fund FAQ Assistant — Refusal Intent Patterns & Canned Copy
+#
+# Purpose: Define all advisory/comparison/prediction query patterns that the
+#          assistant must refuse, along with canned refusal response templates.
+#
+# Change process: PR review required (Product + Legal sign-off).
+# =============================================================================
+
+version: "1.0.0"
+updated: "2026-06-03"
+
+# ---------------------------------------------------------------------------
+# Keyword-gate patterns (Phase 3 Intent Classifier — Step 1: fast regex match)
+# Matched as case-insensitive substrings within the normalised query text.
+# A match on ANY pattern routes the query to the refusal handler.
+# ---------------------------------------------------------------------------
+advisory_patterns:
+  # Investment decision triggers
+  - "should i invest"
+  - "should i buy"
+  - "should i redeem"
+  - "should i switch"
+  - "is it good to invest"
+  - "is it safe to invest"
+  - "worth investing"
+  - "good investment"
+  - "safe investment"
+  - "right time to invest"
+
+  # Recommendation / advice triggers
+  - "recommend"
+  - "suggest"
+  - "advise"
+  - "advice"
+  - "portfolio advice"
+  - "financial advice"
+  - "what should i do"
+
+  # Comparison triggers
+  - "better than"
+  - "which is better"
+  - "which fund is better"
+  - "compare"
+  - "comparison"
+  - "vs"
+  - "versus"
+  - "best fund"
+  - "top fund"
+  - "rank"
+  - "ranking"
+
+  # Prediction / projection triggers
+  - "will it outperform"
+  - "will outperform"
+  - "expected return"
+  - "return in next"
+  - "how much will i get"
+  - "projected return"
+  - "future return"
+  - "growth projection"
+  - "will the fund grow"
+  - "will nav increase"
+  - "performance in"
+
+  # Suitability triggers
+  - "suitable for me"
+  - "right for me"
+  - "good for retirement"
+  - "good for long term"
+  - "safe choice"
+  - "good option"
+
+
+# ---------------------------------------------------------------------------
+# Semantic fallback examples (Phase 3 Intent Classifier — Step 2)
+# Used when keyword gate is uncertain (AMBIGUOUS intent).
+# These are pre-embedded at startup for cosine-similarity comparison.
+# Expand this list to cover subtle advisory phrasing.
+# ---------------------------------------------------------------------------
+advisory_semantic_examples:
+  - "Is this a good fund to put my money in?"
+  - "Do you think I should start a SIP in HDFC Equity Fund?"
+  - "Which HDFC fund will give me the best returns in 5 years?"
+  - "I am planning to retire in 10 years, which fund should I pick?"
+  - "Is HDFC Mid Cap Fund a safe choice for retirement?"
+  - "How will this fund perform in a bear market?"
+  - "Is the lock-in period worth it for ELSS?"
+  - "Can I trust this fund for my child's education?"
+  - "Is HDFC Large Cap better for a conservative investor?"
+  - "Which scheme among these five is the best pick right now?"
+  - "Will the expense ratio increase in the future?"
+  - "Should I go for ELSS or Large Cap for tax saving?"
+  - "Is it the right time to invest in mid cap funds?"
+  - "Will this fund beat inflation?"
+  - "Recommend me a fund for SIP."
+
+
+# ---------------------------------------------------------------------------
+# Refusal response templates
+# {scheme_url} — replaced at runtime with the best matching whitelisted URL
+#                (matching scheme if resolved; first scheme if not).
+# Rules:
+#   - Must include EXACTLY ONE {scheme_url} placeholder.
+#   - Must NOT include investment advice, performance commentary, or comparisons.
+#   - Must be ≤ 3 sentences.
+# ---------------------------------------------------------------------------
+canned_refusal: >
+  I can only answer factual questions about HDFC Mutual Fund schemes listed on Groww.
+  I am not able to provide investment advice, fund comparisons, return projections,
+  or financial recommendations of any kind.
+  For scheme details, please refer to: {scheme_url}
+
+# Refusal used when PII is detected in the query.
+# Note: No URL is included — zero links on PII block route.
+pii_block: >
+  Your message appears to contain personal information (such as a PAN, Aadhaar,
+  account number, email, or phone number).
+  For your security, I cannot process queries containing personal details.
+  Please remove any personal information and try again.
+
+# Refusal used when retrieval confidence is too low to answer safely.
+# Note: No URL is included — zero links on dont_know route.
+dont_know_without_link: >
+  I don't have a verified answer for that question based on the available
+  scheme information.
+  Please refer directly to the Groww scheme page for the most accurate and
+  up-to-date details.
+
+# Response used for empty or whitespace-only queries.
+empty_query: >
+  Please enter a factual question about one of the five HDFC Mutual Fund schemes.

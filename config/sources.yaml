@@ -1,0 +1,86 @@
+# =============================================================================
+# config/sources.yaml
+# Mutual Fund FAQ Assistant — Corpus Whitelist
+#
+# IMMUTABLE: Do NOT add, remove, or modify URLs without a PR review gate.
+# Every URL in this file is the sole allowed citation source for the assistant.
+# CI whitelist check (tests/ci_gate.py) enforces this at every PR.
+#
+# Scope freeze: HDFC Mutual Fund | 5 Groww scheme pages | Iteration 1.0.0
+# =============================================================================
+
+version: "1.0.0"
+updated: "2026-06-03"
+amc: "HDFC Mutual Fund"
+allowed_domain: "https://groww.in/mutual-funds/"
+
+corpus:
+  - id: hdfc_mid_cap
+    name: "HDFC Mid Cap Fund — Direct Growth"
+    category: mid_cap
+    url: "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth"
+    sections_required:
+      - expense_ratio
+      - exit_load
+      - min_sip_amount
+      - riskometer
+      - benchmark_index
+      - fund_overview
+    sections_optional:
+      - lock_in_period
+
+  - id: hdfc_equity
+    name: "HDFC Equity Fund — Direct Growth"
+    category: flexi_cap
+    url: "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth"
+    sections_required:
+      - expense_ratio
+      - exit_load
+      - min_sip_amount
+      - riskometer
+      - benchmark_index
+      - fund_overview
+    sections_optional:
+      - lock_in_period
+
+  - id: hdfc_focused
+    name: "HDFC Focused Fund — Direct Growth"
+    category: focused
+    url: "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth"
+    sections_required:
+      - expense_ratio
+      - exit_load
+      - min_sip_amount
+      - riskometer
+      - benchmark_index
+      - fund_overview
+    sections_optional:
+      - lock_in_period
+
+  - id: hdfc_elss
+    name: "HDFC ELSS Tax Saver — Direct Plan Growth"
+    category: elss
+    url: "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth"
+    sections_required:
+      - expense_ratio
+      - exit_load
+      - min_sip_amount
+      - lock_in_period
+      - riskometer
+      - benchmark_index
+      - fund_overview
+    sections_optional: []
+
+  - id: hdfc_large_cap
+    name: "HDFC Large Cap Fund — Direct Growth"
+    category: large_cap
+    url: "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth"
+    sections_required:
+      - expense_ratio
+      - exit_load
+      - min_sip_amount
+      - riskometer
+      - benchmark_index
+      - fund_overview
+    sections_optional:
+      - lock_in_period

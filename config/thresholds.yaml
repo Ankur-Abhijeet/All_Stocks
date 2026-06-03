@@ -1,0 +1,94 @@
+# =============================================================================
+# config/thresholds.yaml
+# Mutual Fund FAQ Assistant — Tunable Confidence & Behaviour Thresholds
+#
+# All numeric parameters that affect system behaviour are centralised here
+# so they can be tuned without modifying source code.
+# =============================================================================
+
+version: "1.0.0"
+updated: "2026-06-03"
+
+retrieval:
+  # Number of top results from FAISS dense search
+  dense_top_k: 10
+
+  # Number of top results from BM25 sparse search
+  sparse_top_k: 10
+
+  # RRF constant k (standard value = 60)
+  rrf_k: 60
+
+  # Number of merged results passed to the section booster
+  rrf_merged_n: 10
+
+  # Section hint boost multiplier applied to matching-section chunks
+  section_boost_factor: 1.25
+
+  # Number of top chunks after booster passed to cross-encoder re-ranker
+  reranker_input_n: 10
+
+  # Number of top chunks after re-ranking passed to the Orchestrator
+  reranker_output_n: 5
+
+confidence:
+  # Cross-encoder score threshold below which "dont_know" is triggered.
+  # Boundary policy: score >= threshold → pass; score < threshold → dont_know
+  factual_threshold: 0.35
+
+  # Higher threshold applied when Intent Classifier returns AMBIGUOUS
+  ambiguous_threshold: 0.50
+
+chunking:
+  # Soft token cap per chunk (hard split at 1.5x this value)
+  token_soft_cap: 250
+
+  # Token overlap between consecutive chunks within the same section
+  token_overlap: 30
+
+  # Minimum expected total chunks across all 5 schemes.
+  # Indexer refuses to build an index if chunk count falls below this.
+  min_expected_chunks: 20
+
+  # Minimum text length (chars) for a chunk to be kept
+  min_chunk_text_length: 20
+
+fetching:
+  # HTTP request timeout in seconds
+  request_timeout_seconds: 30
+
+  # Number of retries on transient HTTP errors (429, 503, timeout)
+  max_retries: 3
+
+  # Base delay in seconds for exponential backoff between retries
+  retry_base_delay_seconds: 2
+
+  # Minimum raw HTML content size (bytes) to be considered a valid page
+  min_content_bytes: 5000
+
+drift:
+  # Fraction of changed chunks that triggers a freeze (inclusive boundary)
+  freeze_threshold: 0.30
+
+  # Number of raw HTML snapshots to retain per scheme in data/raw/
+  raw_snapshots_keep_last: 3
+
+llm:
+  # Maximum tokens in the LLM completion response
+  max_tokens: 200
+
+  # Temperature (0.0 = fully deterministic)
+  temperature: 0.0
+
+  # Max retry attempts on soft Post-Checker failures (URL count, sentence count, footer)
+  max_soft_retries: 1
+
+api:
+  # Maximum allowed question length in characters
+  max_question_length: 500
+
+  # Max concurrent requests handled by the FastAPI server
+  max_concurrent_requests: 10
+
+  # Request timeout for the /ask endpoint in seconds
+  ask_timeout_seconds: 15

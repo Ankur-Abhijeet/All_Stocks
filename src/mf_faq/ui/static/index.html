@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutual Fund FAQ Assistant</title>
+    <!-- Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Endless GIF Background -->
+    <div class="gif-bg"></div>
+
+    <div class="app-layout">
+        <!-- Sidebar for Chat Sessions -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Chats</h2>
+                <button id="new-chat-btn" class="new-chat-btn" aria-label="New Chat">
+                    <span class="icon">+</span> New Chat
+                </button>
+            </div>
+            <div class="chat-sessions" id="chat-sessions-list">
+                <!-- Session list injected via JS -->
+            </div>
+            
+            <div class="sidebar-divider"></div>
+            
+            <div class="sidebar-section">
+                <h3>Tracked Funds</h3>
+                <ul class="fund-list" id="fund-list">
+                    <!-- Funds injected via JS -->
+                </ul>
+            </div>
+
+            <div class="corpus-status">
+                <div class="status-indicator">
+                    <span class="pulse-green"></span> Live
+                </div>
+                <div class="status-details">
+                    <p>Updated: <span id="meta-updated">Loading...</span></p>
+                    <p>Tracking <span id="meta-schemes-count">0</span> schemes</p>
+                </div>
+            </div>
+        </aside>
+
+        <main class="container">
+            <!-- Header / Disclaimer -->
+            <header class="header">
+                <div class="brand">
+                    <span class="icon">🏦</span>
+                    <div>
+                        <h1>Mutual Fund FAQ</h1>
+                        <p class="subtitle">Facts-only Assistant</p>
+                    </div>
+                </div>
+                <div class="disclaimer-badge" id="disclaimer-badge">
+                    <span class="pulse"></span>
+                    No investment advice
+                    <div class="disclaimer-tooltip" id="disclaimer-text">
+                        Loading disclaimer...
+                    </div>
+                </div>
+            </header>
+
+            <!-- Chat / Response Area -->
+            <section class="chat-area">
+                <div class="hero fade-in-up" id="hero-section">
+                    <h2>Ask a factual question about HDFC schemes.</h2>
+                    <div class="quick-facts-grid" id="quick-facts-grid">
+                        <div class="fact-card hover-glow">
+                            <span class="fact-icon">📊</span>
+                            <h4>Expense Ratios</h4>
+                            <p>Ask about the management fees for any tracked scheme.</p>
+                        </div>
+                        <div class="fact-card hover-glow">
+                            <span class="fact-icon">🔒</span>
+                            <h4>Lock-in Periods</h4>
+                            <p>Check the lock-in period for tax-saver (ELSS) funds.</p>
+                        </div>
+                        <div class="fact-card hover-glow">
+                            <span class="fact-icon">📉</span>
+                            <h4>Exit Loads</h4>
+                            <p>Find out the penalty for early withdrawal.</p>
+                        </div>
+                        <div class="fact-card hover-glow">
+                            <span class="fact-icon">💰</span>
+                            <h4>Min SIP</h4>
+                            <p>Discover the minimum amount required to start a SIP.</p>
+                        </div>
+                    </div>
+                    
+                    <h3 class="examples-title">Try asking:</h3>
+                    <div class="example-questions" id="example-questions">
+                        <!-- Injected via JS -->
+                    </div>
+                </div>
+                <div id="chat-messages" class="chat-messages hidden">
+                    <!-- Chat bubbles injected via JS -->
+                </div>
+            </section>
+
+        <!-- Input Area -->
+        <section class="input-area">
+            <form id="ask-form">
+                <div class="input-wrapper">
+                    <input type="text" id="question-input" placeholder="type your question…" autocomplete="off" required>
+                    <button type="submit" id="submit-btn" aria-label="Send">
+                        <span class="btn-text">→</span>
+                        <div class="spinner hidden" id="loading-spinner"></div>
+                    </button>
+                </div>
+            </form>
+        </section>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

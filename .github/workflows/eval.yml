@@ -1,0 +1,56 @@
+name: Eval & CI Gate (Phase 5)
+
+# Runs the full evaluation suite and CI gate on every PR and push to main.
+# Gate must pass 100% before merge is allowed.
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  validate-config:
+    name: Phase 0 — Validate Config Files
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+      - run: pip install -r requirements.txt
+      - name: Validate sources.yaml (URL whitelist check)
+        run: python -m mf_faq.config.loader
+      - name: Assert corpus count == 5
+        run: |
+          python -c "
+          from mf_faq.config.loader import load_config
+          cfg = load_config()
+          assert len(cfg.sources.corpus) == 5, f'Expected 5 corpus entries, got {len(cfg.sources.corpus)}'
+          print('✅ Corpus count OK:', len(cfg.sources.corpus))
+          "
+      - name: Assert all URLs on allowed domain
+        run: |
+          python -c "
+          from mf_faq.config.loader import load_config, ALLOWED_DOMAIN
+          cfg = load_config()
+          for s in cfg.sources.corpus:
+              assert s.url.startswith(ALLOWED_DOMAIN), f'URL not on allowed domain: {s.url}'
+          print('✅ All URLs on allowed domain.')
+          "
+
+  eval-suite:
+    name: Phase 5 — Evaluation Suite
+    runs-on: ubuntu-latest
+    needs: validate-config
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+      - run: pip install -r requirements.txt
+      - name: Run CI gate
+        run: python tests/ci_gate.py
+        # TODO: Activate when Phase 5 is implemented

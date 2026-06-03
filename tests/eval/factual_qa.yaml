@@ -1,0 +1,11 @@
+# tests/eval/factual_qa.yaml
+# Phase 5 — Factual Q&A evaluation suite
+# 30+ ground-truth Q&A pairs for the 5 HDFC scheme pages.
+# Populated in Phase 5.
+# TODO: Add ground-truth pairs in Phase 5
+- id: placeholder
+  question: "What is the expense ratio of HDFC Mid Cap Fund Direct Growth?"
+  expected_contains: []
+  expected_url: "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth"
+  route: factual
+  last_verified: "2026-06-03"

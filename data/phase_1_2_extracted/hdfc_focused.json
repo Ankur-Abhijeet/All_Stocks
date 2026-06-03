@@ -1,0 +1,16 @@
+{
+    "scheme_id": "hdfc_focused",
+    "scheme_name": "HDFC Focused Fund \u2014 Direct Growth",
+    "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
+    "sections": {
+        "expense_ratio": "0.72",
+        "exit_load": "Exit load of 1% if redeemed within 1 year",
+        "min_sip_amount": "100",
+        "riskometer": "Very High",
+        "benchmark_index": "NIFTY 500 TRI",
+        "fund_overview": "HDFC FOCUSED FUND - DIRECT PLAN - GROWTH OPTION",
+        "aum": "26182.1506",
+        "nav": "250.68"
+    },
+    "extracted_at": "2026-06-04"
+}
