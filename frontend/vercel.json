@@ -2,11 +2,11 @@
   "rewrites": [
     {
       "source": "/ask",
-      "destination": "YOUR_RENDER_URL/ask"
+      "destination": "https://all-stocks-zy0s.onrender.com/ask"
     },
     {
       "source": "/meta",
-      "destination": "YOUR_RENDER_URL/meta"
+      "destination": "https://all-stocks-zy0s.onrender.com/meta"
     }
   ]
 }
