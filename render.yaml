@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: mf-faq-assistant
+    env: docker
+    region: ohio
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
