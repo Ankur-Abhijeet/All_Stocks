@@ -23,6 +23,8 @@ jobs:
     name: Run Ingestion Pipeline
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    env:
+      PYTHONPATH: src
 
     steps:
       - name: Checkout repository
@@ -44,7 +46,6 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}   # Optional; falls back to bge-small-en
         run: |
-          export PYTHONPATH=src
           python -m mf_faq.ingestion.phase_1_7_refresh.refresh
           
       - name: Commit and push updated index

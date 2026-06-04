@@ -13,6 +13,8 @@ jobs:
   validate-config:
     name: Phase 0 — Validate Config Files
     runs-on: ubuntu-latest
+    env:
+      PYTHONPATH: src
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -44,6 +46,8 @@ jobs:
     name: Phase 5 — Evaluation Suite
     runs-on: ubuntu-latest
     needs: validate-config
+    env:
+      PYTHONPATH: src
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
