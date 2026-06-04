@@ -98,5 +98,5 @@ class Orchestrator:
         if passed_retry:
             return {"answer": response_retry, "source_url": source_url if not self.DONT_KNOW_RESPONSE.lower() in response_retry.lower() else None}
         else:
-            logger.error(f"Post-check failed after retry: {failures_retry}")
-            return {"answer": self.SOFT_FAIL_RESPONSE, "source_url": None}
+            logger.error(f"Post-check soft fail retry also failed: {failures_retry}")
+            return {"answer": self.SOFT_FAIL_RESPONSE + f" (DEBUG failures: {failures_retry})", "source_url": None}
