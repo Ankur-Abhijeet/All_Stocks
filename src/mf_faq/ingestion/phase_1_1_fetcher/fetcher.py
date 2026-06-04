@@ -523,11 +523,17 @@ class Fetcher:
     # Private helpers
     # ------------------------------------------------------------------
 
-    def _build_session(self) -> Session:
-        """Create a requests Session with shared headers."""
-        session = Session()
-        session.headers.update(_REQUEST_HEADERS)
-        return session
+    def _build_session(self) -> cloudscraper.CloudScraper:
+        """Create a cloudscraper session to bypass basic Cloudflare anti-bot blocks."""
+        import cloudscraper
+        scraper = cloudscraper.create_scraper(
+            browser={
+                'browser': 'chrome',
+                'platform': 'windows',
+                'desktop': True
+            }
+        )
+        return scraper
 
     def _fetch_one(
         self,
