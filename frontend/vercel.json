@@ -2,11 +2,11 @@
   "rewrites": [
     {
       "source": "/ask",
-      "destination": "https://<RENDER_APP_NAME>.onrender.com/ask"
+      "destination": "YOUR_RENDER_URL/ask"
     },
     {
       "source": "/meta",
-      "destination": "https://<RENDER_APP_NAME>.onrender.com/meta"
+      "destination": "YOUR_RENDER_URL/meta"
     }
   ]
 }
