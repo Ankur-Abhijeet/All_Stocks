@@ -23,8 +23,8 @@ COPY src/ src/
 COPY pyproject.toml .
 COPY README.md .
 
-# Install package in editable mode
-RUN pip install --no-cache-dir -e .
+# Install package
+RUN pip install --no-cache-dir .
 
 # Copy pre-built index (injected during CI/CD)
 # COPY data/index/live/ data/index/live/
