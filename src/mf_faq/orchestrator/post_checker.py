@@ -58,8 +58,8 @@ class PostChecker:
                 return False, failures, "HARD_REJECT"
                 
             # 4. Sentence count (soft)
-            # Rough split by period, question mark, exclamation
-            sentences = [s for s in re.split(r'[.!?]+', response) if s.strip()]
+            # Rough split by period, question mark, exclamation followed by space
+            sentences = [s for s in re.split(r'[.!?]+(?:\s+|$)', response) if s.strip()]
             # Subtract 1 for the URL line and 1 for the footer
             factual_sentences = len(sentences) - 2
             if factual_sentences > 10:

@@ -62,7 +62,7 @@ Rules (STRICT):
         
         prompt = f"Context:\n{context_str}\n\nUser Question: {query}"
         if repair_instruction:
-            prompt += f"\n\nIMPORTANT CORRECTION: {repair_instruction}"
+            prompt += f"\n\nIMPORTANT CORRECTION: {repair_instruction}\nDO NOT FORGET RULE 3 (Source URL) AND RULE 4 (Footer)!"
 
         if self.client:
             # Call Groq
