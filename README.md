@@ -71,11 +71,11 @@ No other sources are ingested or cited. This is enforced via `config/sources.yam
 | Phase | Description | Status |
 |---|---|---|
 | **Phase 0** | Foundation & Governance | ✅ Complete |
-| **Phase 1** | Ingestion & Corpus Build | 🔲 Stub |
-| **Phase 2** | Retrieval Layer | 🔲 Stub |
-| **Phase 3** | Reasoning & Guardrails | 🔲 Stub |
-| **Phase 4** | User Interface (FastAPI + SPA) | 🔲 Stub |
-| **Phase 5** | Evaluation, Compliance & CI | 🔲 Stub |
+| **Phase 1** | Ingestion & Corpus Build | ✅ Complete |
+| **Phase 2** | Retrieval Layer | ✅ Complete |
+| **Phase 3** | Reasoning & Guardrails | ✅ Complete |
+| **Phase 4** | User Interface (FastAPI + SPA) | ✅ Complete |
+| **Phase 5** | Evaluation, Compliance & CI | ✅ Complete |
 
 See [`docs/architecture.md`](docs/architecture.md) for the full phase-wise architecture.
 See [`docs/edge_cases.md`](docs/edge_cases.md) for 94 per-phase edge cases.
@@ -161,6 +161,7 @@ Users should assume data may be up to 7 days old.
 
 | Option | Backend | Frontend |
 |---|---|---|
+| **Live Project** | [Render](https://all-stocks-zy0s.onrender.com) | [Vercel](https://all-stocks-frontend.vercel.app/) |
 | **Recommended** | Render | Vercel |
 | Self-hosted | Docker | Nginx static files |
 

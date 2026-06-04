@@ -19,6 +19,7 @@
 10. [Data Flow (End-to-End)](#10-data-flow-end-to-end)
 11. [Deployment Architecture](#11-deployment-architecture)
 12. [Known Limitations](#12-known-limitations)
+13. [Implementation Updates (Current State)](#13-implementation-updates-current-state)
 
 ---
 
@@ -109,16 +110,20 @@ mf-faq-assistant/
 │
 ├── data/
 │   ├── raw/                     # Fetched HTML snapshots (gitignored)
-│   ├── chunks/                  # JSON chunk store (gitignored)
+│   ├── phase_1_2_extracted/     # Extracted JSON (committed to bypass Cloudflare)
+│   ├── phase_1_3_cleaned/       # Cleaned JSON (committed)
+│   ├── phase_1_4_chunked/       # Chunked JSON (committed)
 │   └── index/                   # FAISS + BM25 artifacts (gitignored)
 │
 ├── .github/
 │   └── workflows/
-│       ├── ingest.yml           # Nightly/weekly corpus refresh
+│       ├── ingest.yml           # Deprecated due to Cloudflare blocks
 │       └── eval.yml             # Eval suite on every PR
 │
 ├── Dockerfile
 ├── docker-compose.yml
+├── render.yaml                  # Render deployment config
+├── vercel.json                  # Vercel deployment config
 └── README.md
 ```
 
@@ -995,3 +1000,27 @@ CMD ["uvicorn", "src.mf_faq.ui.app:app", "--host", "0.0.0.0", "--port", "8000"]
 
 *Architecture Version: 1.0.0 | AMC: HDFC Mutual Fund | Corpus: 5 Groww scheme URLs | LLM: Groq*
 *Generated from: `docs/problemstatement-2.md`*
+
+## 13. Implementation Updates (Current State)
+
+The original architecture plan was slightly modified during implementation to overcome real-world constraints (like cloud anti-bot blocks and deployment requirements). The system is currently fully deployed and operational with the following deviations:
+
+### 13.1 Deployment Architecture
+Instead of a monolithic deployment, the system is decoupled:
+- **Frontend**: Hosted on **Vercel** (`all-stocks-frontend.vercel.app`). It handles the UI, mobile-responsive sidebar, dynamic background animations (still on idle, animated on load), and chat session management (including chat deletion).
+- **Backend**: Hosted on **Render** (`all-stocks-zy0s.onrender.com`). It serves the FastAPI endpoints (`/ask`, `/meta`). The Vercel frontend proxies requests to Render via `vercel.json` rewrites to avoid CORS issues.
+
+### 13.2 Data Ingestion & Cloudflare Blocks
+The original plan relied on GitHub Actions (`ingest.yml`) to run the Phase 1 scraper weekly. However, Groww employs Cloudflare, which aggressively blocks IPs from GitHub Actions and Render.
+- **Workaround**: The scraping and extraction (`Phase 1.1` - `Phase 1.4`) is run manually via `local_scheduler.sh` on a local machine.
+- The resulting `.json` files (`phase_1_2_extracted`, `phase_1_3_cleaned`, `phase_1_4_chunked`) are committed directly to the Git repository.
+
+### 13.3 Dynamic Index Building on Render
+Because FAISS indices are binary files and large, they are **not** committed to GitHub.
+- Instead, the `Dockerfile` includes a build step: `RUN python src/mf_faq/ingestion/build_index_from_cache.py`.
+- This script reads the committed JSON chunks and dynamically builds the FAISS and BM25 `live` index during the Render Docker image build process.
+
+### 13.4 Post-Checker & Repair Improvements
+During live testing, the LLM was penalized by the `PostChecker` due to two edge cases:
+- **Sentence Counting**: The initial logic (`re.split(r'[.!?]+')`) split sentences on decimal points (e.g., `0.68%`) and URLs. This was fixed with a regex update: `re.split(r'[.!?]+(?:\s+|$)')`.
+- **Repair Amnesia**: When the LLM was asked to shorten its response via `repair_instruction`, it forgot to append the required Source URL and Footer. The `LLMClient` was updated to automatically append a strict reminder (`DO NOT FORGET RULE 3 AND RULE 4`) to all repair instructions.
