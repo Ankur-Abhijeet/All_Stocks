@@ -15,13 +15,17 @@
     <div class="gif-bg"></div>
 
     <div class="app-layout">
+        <!-- Sidebar Overlay for Mobile -->
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
         <!-- Sidebar for Chat Sessions -->
-        <aside class="sidebar">
+        <aside class="sidebar" id="sidebar">
             <div class="sidebar-header">
                 <h2>Chats</h2>
                 <button id="new-chat-btn" class="new-chat-btn" aria-label="New Chat">
                     <span class="icon">+</span> New Chat
                 </button>
+                <button id="close-sidebar-btn" class="close-sidebar-btn" aria-label="Close Sidebar">✕</button>
             </div>
             <div class="chat-sessions" id="chat-sessions-list">
                 <!-- Session list injected via JS -->
@@ -51,6 +55,9 @@
             <!-- Header / Disclaimer -->
             <header class="header">
                 <div class="brand">
+                    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    </button>
                     <span class="icon">🏦</span>
                     <div>
                         <h1>Mutual Fund FAQ</h1>

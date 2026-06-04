@@ -874,3 +874,128 @@ body {
     background-repeat: no-repeat;
     opacity: 0.15;
 }
+
+/* Mobile Sidebar & Header Adjustments */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-left: -0.5rem;
+}
+
+.close-sidebar-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.sidebar-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 40;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sidebar-overlay.open {
+    display: block;
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    .close-sidebar-btn {
+        display: block;
+    }
+
+    .brand {
+        gap: 0.5rem;
+    }
+
+    .brand .icon {
+        font-size: 2rem;
+    }
+
+    .sidebar {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        bottom: 0;
+        width: 280px;
+        z-index: 50;
+        transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 4px 0 24px rgba(0,0,0,0.5);
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+
+    .container {
+        padding: 1rem 0.5rem;
+    }
+    
+    .header {
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .disclaimer-badge {
+        align-self: flex-start;
+        font-size: 0.7rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .quick-facts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .message-bubble {
+        max-width: 95%;
+        padding: 0.8rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    .answer-box {
+        padding: 1rem;
+    }
+
+    .input-wrapper {
+        padding: 0.3rem;
+    }
+
+    #question-input {
+        font-size: 0.95rem;
+        padding: 0.6rem 0.8rem;
+    }
+
+    #submit-btn {
+        width: 40px;
+        height: 40px;
+    }
+}
+

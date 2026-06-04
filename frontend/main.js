@@ -80,6 +80,32 @@ document.addEventListener('DOMContentLoaded', () => {
     const metaUpdated = document.getElementById('meta-updated');
     const metaCount = document.getElementById('meta-schemes-count');
     const examplesContainer = document.getElementById('example-questions');
+    
+    // Mobile Sidebar Elements
+    const sidebar = document.getElementById('sidebar');
+    const sidebarOverlay = document.getElementById('sidebar-overlay');
+    const menuToggle = document.getElementById('menu-toggle');
+    const closeSidebarBtn = document.getElementById('close-sidebar-btn');
+
+    function closeSidebar() {
+        sidebar.classList.remove('open');
+        sidebarOverlay.classList.remove('open');
+    }
+
+    if (menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.add('open');
+            sidebarOverlay.classList.add('open');
+        });
+    }
+    
+    if (closeSidebarBtn) {
+        closeSidebarBtn.addEventListener('click', closeSidebar);
+    }
+    
+    if (sidebarOverlay) {
+        sidebarOverlay.addEventListener('click', closeSidebar);
+    }
 
     const API_BASE = window.location.origin;
 
@@ -148,6 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 chatManager.currentSessionId = session.id;
                 renderSidebar();
                 loadCurrentSession();
+                if (typeof closeSidebar === 'function') closeSidebar();
             });
             sessionList.appendChild(div);
         });
