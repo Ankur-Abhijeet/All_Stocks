@@ -161,9 +161,8 @@ Users should assume data may be up to 7 days old.
 
 | Option | Backend | Frontend |
 |---|---|---|
-| **Recommended** | Railway | Vercel |
+| **Recommended** | Render | Vercel |
 | Self-hosted | Docker | Nginx static files |
-| Demo | Streamlit | Streamlit |
 
 ---
 

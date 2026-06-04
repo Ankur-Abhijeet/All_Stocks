@@ -925,11 +925,7 @@ JSON response → Browser renders answer + source + footer
                                        └─────────────────────────────┘
 ```
 
-### 11.2 Option B — Streamlit (Self-contained)
-
-Single `streamlit run app.py` deployment. Suitable for demos and internal use.
-
-### 11.3 Docker
+### 11.2 Docker
 
 ```dockerfile
 FROM python:3.11-slim

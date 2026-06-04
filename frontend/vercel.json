@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/ask",
+      "destination": "https://<RENDER_APP_NAME>.onrender.com/ask"
+    },
+    {
+      "source": "/meta",
+      "destination": "https://<RENDER_APP_NAME>.onrender.com/meta"
+    }
+  ]
+}

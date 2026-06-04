@@ -270,8 +270,7 @@ All interactions are **stateless** — no user data persisted between sessions. 
 
 | Option | Backend | Frontend |
 |---|---|---|
-| Option 1 | Streamlit | Streamlit |
-| Option 2 (recommended) | Railway | Vercel |
+| Recommended | Render | Vercel |
 
 Docker containerization recommended for dependency isolation.
 

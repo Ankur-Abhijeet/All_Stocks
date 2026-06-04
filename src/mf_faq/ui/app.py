@@ -11,7 +11,6 @@ from typing import Dict, Any, Optional
 from datetime import date
 
 from fastapi import FastAPI, HTTPException
-from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from pathlib import Path
@@ -146,7 +145,6 @@ def health() -> Dict[str, str]:
         return {"status": "starting up or degraded"}
     return {"status": "ok", "index_loaded": str(orchestrator.retriever.index.chunk_count > 0)}
 
-# Mount static files for the frontend at the very end
-# so it doesn't intercept API routes
-static_dir = Path(__file__).parent / "static"
-app.mount("/", StaticFiles(directory=str(static_dir), html=True), name="static")
+# API-only mode: static files have been moved to the frontend/ directory
+# for independent Vercel deployment.
+
