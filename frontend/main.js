@@ -30,6 +30,14 @@ class ChatManager {
         return this.sessions.find(s => s.id === id);
     }
 
+    deleteSession(id) {
+        this.sessions = this.sessions.filter(s => s.id !== id);
+        if (this.currentSessionId === id) {
+            this.currentSessionId = this.sessions.length > 0 ? this.sessions[0].id : null;
+        }
+        this.save();
+    }
+
     getCurrentSession() {
         if (!this.currentSessionId && this.sessions.length > 0) {
             this.currentSessionId = this.sessions[0].id;
@@ -168,16 +176,53 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderSidebar() {
         sessionList.innerHTML = '';
         chatManager.sessions.forEach(session => {
-            const div = document.createElement('div');
-            div.className = `session-item ${session.id === chatManager.currentSessionId ? 'active' : ''}`;
-            div.textContent = session.title;
-            div.addEventListener('click', () => {
+            const wrapper = document.createElement('div');
+            wrapper.className = `session-item ${session.id === chatManager.currentSessionId ? 'active' : ''}`;
+            wrapper.style.display = 'flex';
+            wrapper.style.justifyContent = 'space-between';
+            wrapper.style.alignItems = 'center';
+            
+            const titleSpan = document.createElement('span');
+            titleSpan.textContent = session.title;
+            titleSpan.style.flex = '1';
+            titleSpan.style.overflow = 'hidden';
+            titleSpan.style.textOverflow = 'ellipsis';
+            titleSpan.style.whiteSpace = 'nowrap';
+            
+            wrapper.addEventListener('click', (e) => {
+                if (e.target.closest('.delete-btn')) return;
                 chatManager.currentSessionId = session.id;
                 renderSidebar();
                 loadCurrentSession();
                 if (typeof closeSidebar === 'function') closeSidebar();
             });
-            sessionList.appendChild(div);
+            
+            const deleteBtn = document.createElement('button');
+            deleteBtn.className = 'delete-btn';
+            deleteBtn.innerHTML = '✕';
+            deleteBtn.style.background = 'transparent';
+            deleteBtn.style.border = 'none';
+            deleteBtn.style.color = 'inherit';
+            deleteBtn.style.cursor = 'pointer';
+            deleteBtn.style.opacity = '0.6';
+            deleteBtn.style.padding = '0 5px';
+            deleteBtn.title = 'Delete Chat';
+            
+            deleteBtn.addEventListener('mouseenter', () => deleteBtn.style.opacity = '1');
+            deleteBtn.addEventListener('mouseleave', () => deleteBtn.style.opacity = '0.6');
+            
+            deleteBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (confirm('Delete this chat?')) {
+                    chatManager.deleteSession(session.id);
+                    renderSidebar();
+                    loadCurrentSession();
+                }
+            });
+            
+            wrapper.appendChild(titleSpan);
+            wrapper.appendChild(deleteBtn);
+            sessionList.appendChild(wrapper);
         });
     }
 
