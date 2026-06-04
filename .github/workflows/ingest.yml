@@ -14,6 +14,9 @@ on:
     - cron: "0 2 * * 1"   # Weekly: Monday 02:00 UTC
   workflow_dispatch:        # Manual trigger available
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 concurrency:
   group: corpus-refresh
   cancel-in-progress: false  # Never cancel a running refresh mid-swap
