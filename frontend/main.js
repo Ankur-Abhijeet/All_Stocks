@@ -80,6 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const metaUpdated = document.getElementById('meta-updated');
     const metaCount = document.getElementById('meta-schemes-count');
     const examplesContainer = document.getElementById('example-questions');
+    const gifBg = document.querySelector('.gif-bg');
     
     // Mobile Sidebar Elements
     const sidebar = document.getElementById('sidebar');
@@ -270,10 +271,12 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.disabled = true;
             btnText.classList.add('hidden');
             spinner.classList.remove('hidden');
+            if (gifBg) gifBg.classList.add('active');
         } else {
             submitBtn.disabled = false;
             btnText.classList.remove('hidden');
             spinner.classList.add('hidden');
+            if (gifBg) gifBg.classList.remove('active');
         }
     }
 
