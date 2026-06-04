@@ -27,7 +27,7 @@ COPY README.md .
 RUN pip install --no-cache-dir .
 
 # Copy pre-built index (injected during CI/CD)
-# COPY data/index/live/ data/index/live/
+COPY data/ data/
 
 EXPOSE 8000
 
