@@ -21,6 +21,7 @@ RUN python -c "from sentence_transformers import CrossEncoder; CrossEncoder('cro
 COPY config/ config/
 COPY src/ src/
 COPY pyproject.toml .
+COPY README.md .
 
 # Install package in editable mode
 RUN pip install --no-cache-dir -e .
