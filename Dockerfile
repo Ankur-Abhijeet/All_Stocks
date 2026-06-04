@@ -26,9 +26,13 @@ COPY README.md .
 # Install package
 RUN pip install --no-cache-dir .
 
-# Copy pre-built index (injected during CI/CD)
+# Copy data (contains phase_1_4_chunked from Git, but no index)
 COPY data/ data/
 
+# Dynamically build the FAISS and BM25 index from the chunked data
+ENV PYTHONPATH=src
+RUN python -m mf_faq.ingestion.phase_1_5_embedder.embedder && \
+    python -m mf_faq.ingestion.phase_1_6_indexer.indexer
 EXPOSE 8000
 
 ENV APP_HOST=0.0.0.0
