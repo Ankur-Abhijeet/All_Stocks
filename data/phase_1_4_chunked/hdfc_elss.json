@@ -5,9 +5,9 @@
         "scheme_name": "HDFC ELSS Tax Saver \u2014 Direct Plan Growth",
         "section_key": "expense_ratio",
         "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
-        "text": "Scheme: HDFC ELSS Tax Saver \u2014 Direct Plan Growth\nSection: expense_ratio\nContent: Information for expense_ratio could not be extracted from the source.",
-        "token_count": 22,
-        "content_hash": "1b442520d02e9e2159f221f71c6b8f7b7fce1e8097172a3a967f6097c99798e4"
+        "text": "Scheme: HDFC ELSS Tax Saver \u2014 Direct Plan Growth\nSection: expense_ratio\nContent: 1.11",
+        "token_count": 13,
+        "content_hash": "5dd2b5bb76df91b531f1a2f77b1262236995f8852f9daa519e7cceac48bffc13"
     },
     {
         "chunk_id": "hdfc_elss_exit_load",
@@ -15,9 +15,9 @@
         "scheme_name": "HDFC ELSS Tax Saver \u2014 Direct Plan Growth",
         "section_key": "exit_load",
         "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
-        "text": "Scheme: HDFC ELSS Tax Saver \u2014 Direct Plan Growth\nSection: exit_load\nContent: Information for exit_load could not be extracted from the source.",
-        "token_count": 22,
-        "content_hash": "cbd291526e96cc089f9c0cef474c887adab7a275ebc7fb040bf771fc8bcbf971"
+        "text": "Scheme: HDFC ELSS Tax Saver \u2014 Direct Plan Growth\nSection: exit_load\nContent: Nil",
+        "token_count": 13,
+        "content_hash": "d19fb068dee02fb965af20f6d59e92769fcdcb7fdfd66cdf2a4d2e7b59af8ae0"
     },
     {
         "chunk_id": "hdfc_elss_min_sip_amount",
@@ -25,9 +25,9 @@
         "scheme_name": "HDFC ELSS Tax Saver \u2014 Direct Plan Growth",
         "section_key": "min_sip_amount",
         "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
-        "text": "Scheme: HDFC ELSS Tax Saver \u2014 Direct Plan Growth\nSection: min_sip_amount\nContent: Information for min_sip_amount could not be extracted from the source.",
-        "token_count": 22,
-        "content_hash": "091042aefd46e063e6f870c3b79a128e10a2a08f8c2cf0e4b2e19a79aac2b75f"
+        "text": "Scheme: HDFC ELSS Tax Saver \u2014 Direct Plan Growth\nSection: min_sip_amount\nContent: 500",
+        "token_count": 13,
+        "content_hash": "019f8615528c5d3516a1f05afaea6dfc573f2a29dc7ede17d9aa354499bcf40d"
     },
     {
         "chunk_id": "hdfc_elss_lock_in_period",
@@ -35,9 +35,9 @@
         "scheme_name": "HDFC ELSS Tax Saver \u2014 Direct Plan Growth",
         "section_key": "lock_in_period",
         "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
-        "text": "Scheme: HDFC ELSS Tax Saver \u2014 Direct Plan Growth\nSection: lock_in_period\nContent: Information for lock_in_period could not be extracted from the source.",
-        "token_count": 22,
-        "content_hash": "2a5213e5a2318fa6b17fab1b6dface31d25d37ae4099241769379cca3a386e6e"
+        "text": "Scheme: HDFC ELSS Tax Saver \u2014 Direct Plan Growth\nSection: lock_in_period\nContent: Equity ELSS Very High Risk",
+        "token_count": 17,
+        "content_hash": "d6820eca81ea144169460591ab9d283fe2052ef718600941dd1c108d3f3dac04"
     },
     {
         "chunk_id": "hdfc_elss_riskometer",
@@ -45,9 +45,9 @@
         "scheme_name": "HDFC ELSS Tax Saver \u2014 Direct Plan Growth",
         "section_key": "riskometer",
         "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
-        "text": "Scheme: HDFC ELSS Tax Saver \u2014 Direct Plan Growth\nSection: riskometer\nContent: Information for riskometer could not be extracted from the source.",
-        "token_count": 22,
-        "content_hash": "fab442d744a364985e186c07e06255f434f29147eac02d6fbf80a996d019eb74"
+        "text": "Scheme: HDFC ELSS Tax Saver \u2014 Direct Plan Growth\nSection: riskometer\nContent: Very High",
+        "token_count": 14,
+        "content_hash": "9aaf4f2524c7b45555f25980b1dcb595f9af2347d83c02718454117a984b59b1"
     },
     {
         "chunk_id": "hdfc_elss_benchmark_index",
@@ -55,9 +55,9 @@
         "scheme_name": "HDFC ELSS Tax Saver \u2014 Direct Plan Growth",
         "section_key": "benchmark_index",
         "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
-        "text": "Scheme: HDFC ELSS Tax Saver \u2014 Direct Plan Growth\nSection: benchmark_index\nContent: Information for benchmark_index could not be extracted from the source.",
-        "token_count": 22,
-        "content_hash": "c0f181420f0746c1677f5ab5fc3e2368987392663ae47015fd7259b546f2222a"
+        "text": "Scheme: HDFC ELSS Tax Saver \u2014 Direct Plan Growth\nSection: benchmark_index\nContent: NIFTY 500 TRI",
+        "token_count": 15,
+        "content_hash": "ef3d090646009e37c9c819dfcba8da267c589cf325395f1d11b94c92426d204d"
     },
     {
         "chunk_id": "hdfc_elss_fund_overview",
@@ -65,8 +65,28 @@
         "scheme_name": "HDFC ELSS Tax Saver \u2014 Direct Plan Growth",
         "section_key": "fund_overview",
         "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
-        "text": "Scheme: HDFC ELSS Tax Saver \u2014 Direct Plan Growth\nSection: fund_overview\nContent: Information for fund_overview could not be extracted from the source.",
+        "text": "Scheme: HDFC ELSS Tax Saver \u2014 Direct Plan Growth\nSection: fund_overview\nContent: HDFC ELSS TAX SAVER - DIRECT PLAN - GROWTH OPTION",
         "token_count": 22,
-        "content_hash": "63a73b72c3c143291228bbc8550d0ded317310c5e5e8b0b6de827cb670ac8e87"
+        "content_hash": "9dbad87ce8cb5ca8089790791990f3500f20cf1f2c3727f430cd4e6843177312"
+    },
+    {
+        "chunk_id": "hdfc_elss_aum",
+        "scheme_id": "hdfc_elss",
+        "scheme_name": "HDFC ELSS Tax Saver \u2014 Direct Plan Growth",
+        "section_key": "aum",
+        "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+        "text": "Scheme: HDFC ELSS Tax Saver \u2014 Direct Plan Growth\nSection: aum\nContent: 15559.4894",
+        "token_count": 13,
+        "content_hash": "116ca06566e2acc284e7a08a159b69f018ea0d191d892ed9b35170ab96e54956"
+    },
+    {
+        "chunk_id": "hdfc_elss_nav",
+        "scheme_id": "hdfc_elss",
+        "scheme_name": "HDFC ELSS Tax Saver \u2014 Direct Plan Growth",
+        "section_key": "nav",
+        "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+        "text": "Scheme: HDFC ELSS Tax Saver \u2014 Direct Plan Growth\nSection: nav\nContent: 1421.343",
+        "token_count": 13,
+        "content_hash": "4e14fac05e4fe1aecbe372e5753f371c11f30124a1fceb72687864536a4f4f0c"
     }
 ]

@@ -5,9 +5,9 @@
         "scheme_name": "HDFC Focused Fund \u2014 Direct Growth",
         "section_key": "expense_ratio",
         "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
-        "text": "Scheme: HDFC Focused Fund \u2014 Direct Growth\nSection: expense_ratio\nContent: Information for expense_ratio could not be extracted from the source.",
-        "token_count": 20,
-        "content_hash": "d32c86dfd69a4cde87a108f07e59793a4673992585758eced3b0d0817b791a3a"
+        "text": "Scheme: HDFC Focused Fund \u2014 Direct Growth\nSection: expense_ratio\nContent: 0.72",
+        "token_count": 11,
+        "content_hash": "f607d3bc440a565c481902fc5c6d43edc53783f9c0c3762638d85ed832ac8211"
     },
     {
         "chunk_id": "hdfc_focused_exit_load",
@@ -15,9 +15,9 @@
         "scheme_name": "HDFC Focused Fund \u2014 Direct Growth",
         "section_key": "exit_load",
         "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
-        "text": "Scheme: HDFC Focused Fund \u2014 Direct Growth\nSection: exit_load\nContent: Information for exit_load could not be extracted from the source.",
-        "token_count": 20,
-        "content_hash": "84b80e6a0c2a196210ffb1a3d9a3b69e5e163a73c9b9c29be67b028f6e807c1f"
+        "text": "Scheme: HDFC Focused Fund \u2014 Direct Growth\nSection: exit_load\nContent: Exit load of 1% if redeemed within 1 year",
+        "token_count": 19,
+        "content_hash": "31ab8e2c146b8777dae0be02bb5cfb919f043a32f1a40767ae3bad35f3523632"
     },
     {
         "chunk_id": "hdfc_focused_min_sip_amount",
@@ -25,9 +25,9 @@
         "scheme_name": "HDFC Focused Fund \u2014 Direct Growth",
         "section_key": "min_sip_amount",
         "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
-        "text": "Scheme: HDFC Focused Fund \u2014 Direct Growth\nSection: min_sip_amount\nContent: Information for min_sip_amount could not be extracted from the source.",
-        "token_count": 20,
-        "content_hash": "17ecbed9b913c4422ead95df38d6ca4d1efde621ceff30456d299af5f33746fe"
+        "text": "Scheme: HDFC Focused Fund \u2014 Direct Growth\nSection: min_sip_amount\nContent: 100",
+        "token_count": 11,
+        "content_hash": "98cc29e7c34d22f171e449fbb398c6c7b53814492f66df68019f227e62c574ec"
     },
     {
         "chunk_id": "hdfc_focused_riskometer",
@@ -35,9 +35,9 @@
         "scheme_name": "HDFC Focused Fund \u2014 Direct Growth",
         "section_key": "riskometer",
         "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
-        "text": "Scheme: HDFC Focused Fund \u2014 Direct Growth\nSection: riskometer\nContent: Information for riskometer could not be extracted from the source.",
-        "token_count": 20,
-        "content_hash": "514970aba73adce46ce6e36fd5606b4c322e94e563410e5235699511c6878957"
+        "text": "Scheme: HDFC Focused Fund \u2014 Direct Growth\nSection: riskometer\nContent: Very High",
+        "token_count": 12,
+        "content_hash": "99c6b06afe50e30ef7f33bf3954cf2fb64d91a077801bedc94989f1c3a6d1055"
     },
     {
         "chunk_id": "hdfc_focused_benchmark_index",
@@ -45,9 +45,9 @@
         "scheme_name": "HDFC Focused Fund \u2014 Direct Growth",
         "section_key": "benchmark_index",
         "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
-        "text": "Scheme: HDFC Focused Fund \u2014 Direct Growth\nSection: benchmark_index\nContent: Information for benchmark_index could not be extracted from the source.",
-        "token_count": 20,
-        "content_hash": "ab6c4cd7ad08f469b156c99363f969ec50faf43b61304915a69bb27191131d56"
+        "text": "Scheme: HDFC Focused Fund \u2014 Direct Growth\nSection: benchmark_index\nContent: NIFTY 500 TRI",
+        "token_count": 13,
+        "content_hash": "5854a13935eb5e3f20d48cffec42b829815fdce5d0907c3e62e457b56e22bdf0"
     },
     {
         "chunk_id": "hdfc_focused_fund_overview",
@@ -55,8 +55,28 @@
         "scheme_name": "HDFC Focused Fund \u2014 Direct Growth",
         "section_key": "fund_overview",
         "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
-        "text": "Scheme: HDFC Focused Fund \u2014 Direct Growth\nSection: fund_overview\nContent: Information for fund_overview could not be extracted from the source.",
-        "token_count": 20,
-        "content_hash": "703d15208119bba15cb9c43b3e497f876314d6a3c12a48a64e210c1b2d9fba24"
+        "text": "Scheme: HDFC Focused Fund \u2014 Direct Growth\nSection: fund_overview\nContent: HDFC FOCUSED FUND - DIRECT PLAN - GROWTH OPTION",
+        "token_count": 19,
+        "content_hash": "430267d31418bc69b5a026d1e0d830203a6e03473e238fe334534f3603ed3c51"
+    },
+    {
+        "chunk_id": "hdfc_focused_aum",
+        "scheme_id": "hdfc_focused",
+        "scheme_name": "HDFC Focused Fund \u2014 Direct Growth",
+        "section_key": "aum",
+        "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
+        "text": "Scheme: HDFC Focused Fund \u2014 Direct Growth\nSection: aum\nContent: 26182.1506",
+        "token_count": 11,
+        "content_hash": "85600a42cbec13f610a0fad6afe14fd94b23fdeea24cc314cee58488664687c5"
+    },
+    {
+        "chunk_id": "hdfc_focused_nav",
+        "scheme_id": "hdfc_focused",
+        "scheme_name": "HDFC Focused Fund \u2014 Direct Growth",
+        "section_key": "nav",
+        "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
+        "text": "Scheme: HDFC Focused Fund \u2014 Direct Growth\nSection: nav\nContent: 250.68",
+        "token_count": 11,
+        "content_hash": "3da3f83cb2cd7e5ce83c60b27b762d57e8c55481b7ba425f1781b194a8bbe85e"
     }
 ]

@@ -5,9 +5,9 @@
         "scheme_name": "HDFC Mid Cap Fund \u2014 Direct Growth",
         "section_key": "expense_ratio",
         "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
-        "text": "Scheme: HDFC Mid Cap Fund \u2014 Direct Growth\nSection: expense_ratio\nContent: Information for expense_ratio could not be extracted from the source.",
-        "token_count": 21,
-        "content_hash": "d6b4d53ac7e2d118c685f8c4e0fdd092a1d8d969c896eea1ba51ed4805607d00"
+        "text": "Scheme: HDFC Mid Cap Fund \u2014 Direct Growth\nSection: expense_ratio\nContent: 0.73",
+        "token_count": 12,
+        "content_hash": "3a66e77a30dcdbbffa92211a80bd5a878515af8ae06fbd9f05df698091222a8d"
     },
     {
         "chunk_id": "hdfc_mid_cap_exit_load",
@@ -15,9 +15,9 @@
         "scheme_name": "HDFC Mid Cap Fund \u2014 Direct Growth",
         "section_key": "exit_load",
         "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
-        "text": "Scheme: HDFC Mid Cap Fund \u2014 Direct Growth\nSection: exit_load\nContent: Information for exit_load could not be extracted from the source.",
-        "token_count": 21,
-        "content_hash": "ab17334313571f817cfb6faf00f0f077478b79dd2ca90d0e6ad9193b6e8a031d"
+        "text": "Scheme: HDFC Mid Cap Fund \u2014 Direct Growth\nSection: exit_load\nContent: Exit load of 1% if redeemed within 1 year.",
+        "token_count": 20,
+        "content_hash": "9f329637cff078705d3717494dccd5fcc1f675df96a724be997f166f3ea81b6a"
     },
     {
         "chunk_id": "hdfc_mid_cap_min_sip_amount",
@@ -25,9 +25,9 @@
         "scheme_name": "HDFC Mid Cap Fund \u2014 Direct Growth",
         "section_key": "min_sip_amount",
         "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
-        "text": "Scheme: HDFC Mid Cap Fund \u2014 Direct Growth\nSection: min_sip_amount\nContent: Information for min_sip_amount could not be extracted from the source.",
-        "token_count": 21,
-        "content_hash": "37d8e4d9d438610d0c9146f3760d5287d79a427152da2d4738f0f5b8d523a4cf"
+        "text": "Scheme: HDFC Mid Cap Fund \u2014 Direct Growth\nSection: min_sip_amount\nContent: 100",
+        "token_count": 12,
+        "content_hash": "d252f45384c5c9df7f562b657d61606c8994754167d01eafa52157a5c26d29ce"
     },
     {
         "chunk_id": "hdfc_mid_cap_riskometer",
@@ -35,9 +35,9 @@
         "scheme_name": "HDFC Mid Cap Fund \u2014 Direct Growth",
         "section_key": "riskometer",
         "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
-        "text": "Scheme: HDFC Mid Cap Fund \u2014 Direct Growth\nSection: riskometer\nContent: Information for riskometer could not be extracted from the source.",
-        "token_count": 21,
-        "content_hash": "11427d1dded8853d699380ebee389346ca72e766b32f370d2fdd246b299b9f17"
+        "text": "Scheme: HDFC Mid Cap Fund \u2014 Direct Growth\nSection: riskometer\nContent: Very High",
+        "token_count": 13,
+        "content_hash": "5461f67d51cd4eac9110f8e71007447143bc884e78aabc6a7041d8db638e876a"
     },
     {
         "chunk_id": "hdfc_mid_cap_benchmark_index",
@@ -45,9 +45,9 @@
         "scheme_name": "HDFC Mid Cap Fund \u2014 Direct Growth",
         "section_key": "benchmark_index",
         "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
-        "text": "Scheme: HDFC Mid Cap Fund \u2014 Direct Growth\nSection: benchmark_index\nContent: Information for benchmark_index could not be extracted from the source.",
-        "token_count": 21,
-        "content_hash": "3ab6d8788af180e7c575bf450a4727d51bb8602d6ca2ad439cfe8250249d3e16"
+        "text": "Scheme: HDFC Mid Cap Fund \u2014 Direct Growth\nSection: benchmark_index\nContent: NIFTY Midcap 150 TRI",
+        "token_count": 15,
+        "content_hash": "feec441cb29b426234f6521d00396cb505132b38650302c91d919a20c81a9427"
     },
     {
         "chunk_id": "hdfc_mid_cap_fund_overview",
@@ -55,8 +55,28 @@
         "scheme_name": "HDFC Mid Cap Fund \u2014 Direct Growth",
         "section_key": "fund_overview",
         "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
-        "text": "Scheme: HDFC Mid Cap Fund \u2014 Direct Growth\nSection: fund_overview\nContent: Information for fund_overview could not be extracted from the source.",
+        "text": "Scheme: HDFC Mid Cap Fund \u2014 Direct Growth\nSection: fund_overview\nContent: HDFC MID CAP FUND - DIRECT PLAN - GROWTH OPTION",
         "token_count": 21,
-        "content_hash": "e7bdea18c29ae31e6347e017fdaac95ea0898efbf27d77c71c3f7674932459c1"
+        "content_hash": "77573e5dea11fefca634f2029bb069b70d272faf5b7789d2f238f9e43a98b947"
+    },
+    {
+        "chunk_id": "hdfc_mid_cap_aum",
+        "scheme_id": "hdfc_mid_cap",
+        "scheme_name": "HDFC Mid Cap Fund \u2014 Direct Growth",
+        "section_key": "aum",
+        "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+        "text": "Scheme: HDFC Mid Cap Fund \u2014 Direct Growth\nSection: aum\nContent: 94744.7175",
+        "token_count": 12,
+        "content_hash": "ccb2b12e15b8b2fa763a4b913964a92cdfc1a7361e40573524205285d45b31f5"
+    },
+    {
+        "chunk_id": "hdfc_mid_cap_nav",
+        "scheme_id": "hdfc_mid_cap",
+        "scheme_name": "HDFC Mid Cap Fund \u2014 Direct Growth",
+        "section_key": "nav",
+        "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+        "text": "Scheme: HDFC Mid Cap Fund \u2014 Direct Growth\nSection: nav\nContent: 219.077",
+        "token_count": 12,
+        "content_hash": "b04d3aeaad94fb61c43a7766d6fb44aaf92dc22ee102d3b7ff9847244ed51f88"
     }
 ]
