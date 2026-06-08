@@ -3,15 +3,13 @@
     "scheme_name": "HDFC Mid Cap Fund \u2014 Direct Growth",
     "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
     "sections": {
-        "expense_ratio": "0.73",
-        "exit_load": "Exit load of 1% if redeemed within 1 year.",
-        "min_sip_amount": "100",
-        "riskometer": "Very High",
-        "benchmark_index": "NIFTY Midcap 150 TRI",
-        "fund_overview": "HDFC MID CAP FUND - DIRECT PLAN - GROWTH OPTION",
-        "aum": "94744.7175",
-        "nav": "219.077"
+        "expense_ratio": "Information for expense_ratio could not be extracted from the source.",
+        "exit_load": "Information for exit_load could not be extracted from the source.",
+        "min_sip_amount": "Information for min_sip_amount could not be extracted from the source.",
+        "riskometer": "Information for riskometer could not be extracted from the source.",
+        "benchmark_index": "Information for benchmark_index could not be extracted from the source.",
+        "fund_overview": "Information for fund_overview could not be extracted from the source."
     },
-    "cleaned_at": "2026-06-04",
+    "cleaned_at": "2026-06-08",
     "dropped_keys": []
 }
