@@ -11,6 +11,6 @@
         "benchmark_index": "Information for benchmark_index could not be extracted from the source.",
         "fund_overview": "Information for fund_overview could not be extracted from the source."
     },
-    "cleaned_at": "2026-06-29",
+    "cleaned_at": "2026-07-06",
     "dropped_keys": []
 }
